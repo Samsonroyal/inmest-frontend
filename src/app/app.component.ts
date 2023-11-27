@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './auth/login/login.component';
+import { SideNavComponent } from './app-core/common/side-nav/side-nav.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FormsModule, LoginComponent],
+  imports: [CommonModule, RouterOutlet, FormsModule, LoginComponent, SideNavComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
